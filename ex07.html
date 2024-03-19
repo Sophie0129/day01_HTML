@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="ex06.html"><!--form 다른데로 정보를 보낼때 필요-->
+        <input type="text" name="test_id" placeholder="아이디 입력"
+        required><br><!--리콰이어 정보없으면 못넘기게 함-->
+        <input type="tel" placeholder="예)010-xxxx-xxxx" 
+        pattern="\d{3}-\d{4}-\d{4}" name="test_num" required>
+        <!--네임은 다른 페이지에서 정보를 보고 받아오는 역할로 꼭 필요함-->
+        <input type="test" readonly value="쓸수 없음"><br>
+        <input type="submit" value="전송"><br><!--버튼과 같다-->
+        <input type="button" value="button" disabled>
+        <button type="submit">버튼</button>
+
+    </form>
+    <hr>
+    <div style="background-color: pink;">웹 브라우저 전체 공간에 대해 분할</div>
+    <div style="background-color: skyblue;">블록(block) 형식으로 분할</div>
+    <hr>
+    <span style="background-color: peru;">웹 브라우저의 일부 영역만 분할</span>
+    <span style="background-color: tan;">인라인(inline) 형식으로 분할</span>
+
+    <dic style="background-color: hotpink;"></dic>
+    div 영역 <span style="background-color: peru;">span 첫번째 영역</span>
+    div 영역 <span style="background-color: red;">span 두번재 영역</span>
+    
+</body>
+</html>
